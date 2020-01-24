@@ -1,0 +1,158 @@
+body{
+  margin: auto 0;
+  font-family: 'VT323', monospace;
+  background: url(./img/skele-grave.gif) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    /*margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:0px;
+    border:3px solid #c9081c;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*nav*/
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push{
+    margin-left: auto;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    color: #c9081c;
+    text-decoration: none;
+}
+
+/*cover*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150vh;
+}
+
+h4{
+    color: rgba(10, 232, 0);
+    
+    padding: 70px;
+}
+
+.blank-pg{
+    display: flex;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.7);
+}
+/*proj grid*/
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img{
+    width: 100%;
+}
+
+.box{
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.nav-color{
+    background: rgb(0,0,0);
+}
+
+/***********************************************************************
+ *  Banner Background
+ **********************************************************************/
+.banner-color{
+    background: #2a046d;
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+.ver{
+    color: #c9081c;
+    text-decoration: none;
+}
